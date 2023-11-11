@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{E7A1E618-507F-4F30-9824-DDDFC5DE8052}|https">
+  <MonoDevelop.Ide.ItemProperties.CloudCustomers.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCustomers.UnitTests/Systems/Controllers/TestUsersController.cs">
+    <Files>
+      <File FileName="CloudCustomers.API/Program.cs" />
+      <File FileName="CloudCustomers.UnitTests/Systems/Controllers/TestUsersController.cs" Line="38" Column="25" />
+      <File FileName="CloudCustomers.API/Controllers/UsersController.cs" />
+      <File FileName="CloudCustomers.API/Services/UsersService.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CloudCustomers" expanded="True">
+            <Node name="CloudCustomers.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="CloudCustomers.UnitTests" expanded="True">
+              <Node name="Systems" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="TestUsersController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CloudCustomers" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
