@@ -31,4 +31,5 @@ app.Run();
 void ConfigureServices(IServiceCollection services) {
 
     services.AddSingleton<IUsersService, UsersService>();
+    services.AddHttpClient<IUsersService, UsersService>();
 }

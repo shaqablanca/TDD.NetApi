@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Xunit;
 using Moq;
+using CloudCustomers.UnitTests.Fixtures;
 
 namespace CloudCustomers.UnitTests.Sytems.Controllers;
 
@@ -27,19 +28,7 @@ public class TestUsersController
         mockUsersService
             .Setup(service => service
             .GetAllUsers())
-            .ReturnsAsync(new List<User>() {
-            new() {
-                Id = 1,
-                Name = "Darren",
-                Address = new Address(){
-                    Street = "BlaBla St",
-                    City = "Endor",
-                    ZipCode = "1024423"
-                },
-
-                Email = "darren@example.com"
-            }
-        });
+            .ReturnsAsync(UsersFixture.GetTestUsers());
 
         //Act
 
@@ -82,19 +71,7 @@ public class TestUsersController
 
         mockUsersService
         .Setup(service => service.GetAllUsers())
-        .ReturnsAsync(new List<User>() {
-            new() {
-                Id = 1,
-                Name = "Darren",
-                Address = new Address(){
-                    Street = "BlaBla St",
-                    City = "Endor",
-                    ZipCode = "1024423"
-                },
-
-                Email = "darren@example.com"
-	        }
-        });
+        .ReturnsAsync(UsersFixture.GetTestUsers());
 
         var sut = new UsersController(mockUsersService.Object);
 
