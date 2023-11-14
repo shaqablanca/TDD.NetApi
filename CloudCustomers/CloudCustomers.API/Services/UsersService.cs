@@ -10,10 +10,15 @@ namespace CloudCustomers.API.Services
     }
     public class UsersService : IUsersService
 	{
+        private readonly HttpClient _httpClient;
 
-        public Task<List<User>> GetAllUsers()
-        {
-            throw new NotImplementedException();
+        public UsersService(HttpClient httpClient) {
+            _httpClient = httpClient;
+	}
+
+        public async Task<List<User>> GetAllUsers() {
+            var usersResponse = await _httpClient.GetAsync("https://callssomething.com");
+            return new List<User> { };
         }
     }
 }
