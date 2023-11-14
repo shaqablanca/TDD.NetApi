@@ -1,4 +1,6 @@
+using CloudCustomers.API.Config;
 using CloudCustomers.API.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +31,7 @@ app.MapControllers();
 app.Run();
 
 void ConfigureServices(IServiceCollection services) {
-
+    services.Configure<UsersApiOptions>(builder.Configuration.GetSection("UsersApiOptions"));
     services.AddSingleton<IUsersService, UsersService>();
     services.AddHttpClient<IUsersService, UsersService>();
 }
